@@ -18,7 +18,7 @@ async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
         buttons = [
             [
-                InlineKeyboardButton('𝚄𝙿𝙳𝙰𝚃𝙴𝚂', url='https://t.me/+AMHw_K1wvOM3MTU9')
+                InlineKeyboardButton('𝚄𝙿𝙳𝙰𝚃𝙴𝚂', url='https://t.me/new_movies_group_2021')
             ],
             [
                 InlineKeyboardButton('𝙷𝙴𝙻𝙿', url=f"https://t.me/{temp.U_NAME}?start=help"),
@@ -40,9 +40,9 @@ async def start(client, message):
             InlineKeyboardButton('ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ', url='http://t.me/Jd_73_bot?startgroup=true')
             ],[
             InlineKeyboardButton('sᴇᴀʀᴄʜ', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('Group', url='https://t.me/moviebus2')
+            InlineKeyboardButton('Group', url='https://t.me/new_movies_group_2021')
             ],[
-            InlineKeyboardButton('Channel', url='https://t.me/+AMHw_K1wvOM3MTU9')
+            InlineKeyboardButton('Channel', url='https://t.me/new_all_movies_club')
             ],[
             InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
             InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
@@ -73,7 +73,7 @@ async def start(client, message):
             btn.append([InlineKeyboardButton("𝚃𝚁𝚈 𝙰𝙶𝙰𝙸𝙽", callback_data=f"checksub#{message.command[1]}")])
         await client.send_message(
             chat_id=message.from_user.id,
-            text="**Please Join My Updates Channel to use this Bot!**",
+            text="**നിങ്ങൾക്ക് സിനിമ കിട്ടണമെങ്കിൽ താഴെക്കാണുന്ന Join Updates Channel എന്നത് ക്ലിക്ക് ചെയ്ത് Join ചെയ്ത് തിരികെ വന്ന് movie യുടെ name ഇട്ടാല്‍ സിനിമ കിട്ടുന്നതാണ്💯**",
             reply_markup=InlineKeyboardMarkup(btn),
             parse_mode="markdown"
             )
@@ -83,9 +83,9 @@ async def start(client, message):
             InlineKeyboardButton('ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ', url='http://t.me/Jd_73_bot?startgroup=true')
             ],[
             InlineKeyboardButton('sᴇᴀʀᴄʜ', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('Group', url='https://t.me/moviebus2')
+            InlineKeyboardButton('Group', url='https://t.me/new_movies_group_2021')
             ],[
-            InlineKeyboardButton('Channel', url='https://t.me/+AMHw_K1wvOM3MTU9')
+            InlineKeyboardButton('Channel', url='https://t.me/new_all_movies_club')
             ],[
             InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
             InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
