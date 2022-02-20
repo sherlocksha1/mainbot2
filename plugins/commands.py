@@ -70,7 +70,7 @@ async def start(client, message):
         ]
 
         if message.command[1] != "Join":
-            btn.append([InlineKeyboardButton("𝚃𝚁𝚈 𝙰𝙶𝙰𝙸𝙽", callback_data=f"checksub#{message.command[1]}")])
+            btn.append([InlineKeyboardButton("Try Again", callback_data=f"checksub#{message.command[1]}")])
         await client.send_message(
             chat_id=message.from_user.id,
             text="**നിങ്ങൾക്ക് സിനിമ കിട്ടണമെങ്കിൽ താഴെക്കാണുന്ന JOIN CHANNEL എന്നത് ക്ലിക്ക് ചെയ്ത് Join ചെയ്ത് തിരികെ വന്ന് Try Again കൊടുത്ത ശേഷം സിനിമ കിട്ടുന്നതാണ്💯 ( പിന്നീട് വീണ്ടും ഇങ്ങനെ  ചെയ്യേണ്ട ആവിശ്യം ഇല്ല 👍 )**",
