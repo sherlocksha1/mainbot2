@@ -403,10 +403,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('𝙰𝚋𝚘𝚞𝚝', callback_data='about')
             ],[
             InlineKeyboardButton('𝙷𝙴𝙻𝙿', callback_data='help'),
-            InlineKeyboardButton('𝙶𝚛𝚘𝚞𝚙', url='https://t.me/moviebus2')
+            InlineKeyboardButton('𝙶𝚛𝚘𝚞𝚙', url='https://t.me/new_movies_group_2021')
             ],[
             InlineKeyboardButton('𝙾𝚠𝚗𝚎𝚛', url='https://t.me/albintko'),
-            InlineKeyboardButton('𝙲𝚑𝚊𝚗𝚗𝚎𝚕', url='https://t.me/+AMHw_K1wvOM3MTU9')
+            InlineKeyboardButton('𝙲𝚑𝚊𝚗𝚗𝚎𝚕', url='https://t.me/new_all_movies_club')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -889,7 +889,7 @@ async def advantage_spell_chok(msg):
     movielist += [(re.sub(r'(\-|\(|\)|_)', '', i, flags=re.IGNORECASE)).strip() for i in gs_parsed]
     movielist = list(dict.fromkeys(movielist)) # removing duplicates
     if not movielist:
-        k = await msg.reply("I couldn't find anything related to that. Check your spelling")
+        k = await msg.reply("നിങ്ങൾ ചോദിച്ചത് മനസ്സിലായിട്ടില്ല. സ്പെല്ലിംഗ് ഒന്ന് ചെക്ക് ചെയ്തു നോക്കുക🏃‍")
         await asyncio.sleep(8)
         await k.delete()
         return
@@ -901,7 +901,7 @@ async def advantage_spell_chok(msg):
                 )
             ] for k, movie in enumerate(movielist)]
     btn.append([InlineKeyboardButton(text="Close", callback_data=f'spolling#{user}#close_spellcheck')])
-    await msg.reply("I couldn't find anything related to that\nDid you mean any one of these?", reply_markup=InlineKeyboardMarkup(btn))
+    await msg.reply("എനിക്ക് അതുമായി ബന്ധപ്പെട്ട ഒന്നും കണ്ടെത്താൻ കഴിഞ്ഞില്ല .ഇതിൽ ഏതെങ്കിലും ഒന്നാണോ താങ്കൾ ഉദ്ദേശിച്ചത്?", reply_markup=InlineKeyboardMarkup(btn))
     
 
 async def manual_filters(client, message, text=False):
