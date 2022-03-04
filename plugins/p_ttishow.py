@@ -44,16 +44,7 @@ async def save_group(bot, message):
         await message.reply_text(
             text=f"<b>എന്നെ നിങ്ങളുടെ ഗ്രൂപ്പില്‍ ചേര്‍ത്തതിന് നന്ദി {message.chat.title} ❣️\n\n JOIN OUR UPDATE CHANNEL 🥳</b>",
             reply_markup=reply_markup)
-    else:
-        for u in message.new_chat_members:
-            if (temp.MELCOW).get('welcome') is not None:
-                try:
-                    await (temp.MELCOW['welcome']).delete()
-                except:
-                    pass
-            temp.MELCOW['welcome'] = await message.reply(f"<b>ഹായ് 👋{u.mention}👋 {message.chat.title}ലേക്ക് സ്വാഗതം🥳\n ഈ ഗ്രൂപ്പ് എല്ലാവരിലേക്കും ഷെയർ ചെയ്യാൻ മറക്കല്ലേ..💝</b>")
-
-
+    
 @Client.on_message(filters.command('leave') & filters.user(ADMINS))
 async def leave_a_chat(bot, message):
     if len(message.command) == 1:
