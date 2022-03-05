@@ -29,7 +29,6 @@
         "MAX_LIST_ELM": {
             "description": " the view of elements ",
             "required": false
-            "value": "4"
         },
         "API_HASH": {
             "description": "Get this value from https://my.telegram.org",
