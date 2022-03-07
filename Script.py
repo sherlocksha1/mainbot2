@@ -146,18 +146,6 @@ Paste some texts or documents on a website!
 • These commands works on both pm and group.
 • These commands can be used by any group member."""
 
-    TGRAPH_TXT = """Help: <b>TGraph & Paste</b>
-
-Do as you wish with telegra.ph module!
-
-<b>Commands and Usage:</b>
-• /tgmedia or /tgraph - upload supported media (within 5MB) to telegraph.
-
-<b>NOTE:</b>
-• IMDb should have admin privillage.
-• These commands works on both pm and group.
-• These commands can be used by any group member."""
-
     INFO_TXT = """Help: <b>Information</b>
 
 Get information about something!
