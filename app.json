@@ -42,10 +42,6 @@
             "description": "Username or ID of Admin. Separate multiple Admins by space.",
             "value": ""
         },
-        "PICS": {
-            "description": "Add some telegraph link of pictures .",
-            "value": ""
-        },
         "IMDB": {
             "description": "Imdb, the view of information when making True/False ",
             "required": false
